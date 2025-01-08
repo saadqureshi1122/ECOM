@@ -18,7 +18,7 @@ const Footer = () => {
             <Image
               src={NewsLetter}
               alt="Newsletter"
-              className="h-[20px] sm:h-[25px]"
+              className="h-[20px] sm:h-[25px] w-auto"
             />
 
             <h2 className="font-bold text-white text-lg sm:text-2xl">
@@ -129,7 +129,7 @@ const Footer = () => {
       <footer className="footer-bottom border-b border-gray py-1.5 sm:py-3 flex justify-center items-center text-white bg-footer-color">
         <div className="w-[90%] max-w-[1500px] mx-auto flex justify-center items-center">
           <h1 className="font-semibold sm:text-sm text-xs">
-            &copy; {new Date().getFullYear()}; Powered By Developer's Saad
+            &copy; {new Date().getFullYear()}; Powered By Developer&apos;s Saad
           </h1>
         </div>
       </footer>

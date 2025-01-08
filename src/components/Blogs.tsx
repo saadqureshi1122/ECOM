@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import "../styles/style.css";
 import { useRouter } from "next/navigation";
 
@@ -15,7 +16,7 @@ const Blogs = ({ blogSize }: { blogSize: string }) => {
             }`}
     >
       <div className="w-full">
-        <img src="images/blog-1.jpg" alt="" className="w-full" />
+        <Image src="/images/blog-1.jpg" alt="" className="w-full" width={100} height={100} />
       </div>
       <div className="flex flex-col gap-1.5 sm:gap-3 px-2 pt-2 pb-3">
         <h6 className="text-sm sm:text-base font-semibold">6 Jun. 2024</h6>

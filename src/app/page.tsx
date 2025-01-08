@@ -1,15 +1,32 @@
 "use client";
-import Marquee from "react-fast-marquee";
+import Image from "next/image";
+import Catbanner1 from "../images/catbanner-01.jpg";
+import MainBanner from "../images/main-banner-1.jpg";
+import { useEffect, useState } from "react";
+import { services } from "@/utils/Data";
 import Blogs from "@/components/Blogs";
+import Marquee from "react-fast-marquee";
 import ProductCard from "@/components/ProductCard";
 import SpecialProductCard from "@/components/SpecialProductCard";
-import { services } from "@/utils/Data";
-import Image from "next/image";
-import MainBanner from "../images/main-banner-1.jpg";
-import Catbanner1 from "../images/catbanner-01.jpg";
 
 const Home = () => {
-  const screenWidth = window.innerWidth;
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Set initial width
+      setScreenWidth(window.innerWidth);
+
+      // Update width on window resize
+      const handleResize = () => setScreenWidth(window.innerWidth);
+      window.addEventListener('resize', handleResize);
+
+      // Cleanup event listener on unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
 
   const getSize = (screenWidth: number) => {
     if (screenWidth < 640) {
@@ -18,6 +35,7 @@ const Home = () => {
       return "287px";
     }
   };
+
   return (
     <>
       {/* Home Banners Section */}
@@ -141,7 +159,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        
+
         <div
           className={`${
             screenWidth < 640 ? " categories-mob" : "categories"
@@ -305,7 +323,7 @@ const Home = () => {
                 Smart Watch Series 7
               </h1>
               <p className="text-xs sm:text-sm">
-                From $399 or $16.62/mo. for 24 mo. "
+                From $399 or $16.62/mo. for 24 mo. &quot;
               </p>
             </div>
             <div className="w-full flex justify-center items-center">
@@ -363,10 +381,10 @@ const Home = () => {
                 <Image
                   src="/images/Samsung.jpg"
                   alt="Samsung"
-                  layout="responsive" // Responsive layout
-                  width={70} // Aspect ratio width
-                  height={70} // Aspect ratio height
+                  width={700} // Specify width
+                  height={700} // Specify height
                   className="bg-white"
+                  sizes="(max-width: 768px) 100vw, 700px" // Define sizes for responsive behavior
                 />
               </div>
             </div>
@@ -382,20 +400,20 @@ const Home = () => {
                 Smart Watch Series 7
               </h1>
               <p className="text-xs sm:text-sm">
-                From $399 or $16.62/mo. for 24 mo. "
+                From $399 or $16.62/mo. for 24 mo. &quot;
               </p>
             </div>
             <div className="w-full flex justify-center items-center">
-              <div className="w-[77%] sm:w-[70%] relative">
-                <Image
-                  src="/images/acc-removebg-preview.png"
-                  alt="Account Image"
-                  layout="responsive" // Responsive layout
-                  width={100} // Aspect ratio width
-                  height={100} // Aspect ratio height (square in this case)
-                  className="bg-white"
-                />
-              </div>
+            <div className="w-[77%] sm:w-[70%] relative">
+  <Image
+    src="/images/acc-removebg-preview.png"
+    alt="Account Image"
+    width={100}  // Specify width
+    height={100} // Specify height
+    className="bg-white"
+    sizes="(max-width: 768px) 100vw, 100px" // Define sizes for responsive behavior
+  />
+</div>
             </div>
           </div>
         </div>
@@ -438,14 +456,54 @@ const Home = () => {
         <div className="Px-2 w-[95%] sm:w-[90%] max-w-[1500px] mx-auto bg-white py-2.5 sm:py-5 shadow-lg rounded ">
           <Marquee>
             <div className=" Px-2 flex justify-between items-center w-[6%] sm:w-full gap-8 sm:gap-10">
-              <Image src="/images/brand-01.png" width={100} height={100} alt="brand-01" />
-              <Image src="/images/brand-02.png" width={100} height={100} alt="brand-02" />
-              <Image src="/images/brand-03.png" width={100} height={100} alt="brand-03" />
-              <Image src="/images/brand-04.png" width={100} height={100} alt="brand-04" />
-              <Image src="/images/brand-05.png" width={100} height={100} alt="brand-05" />
-              <Image src="/images/brand-06.png" width={100} height={100} alt="brand-06" />
-              <Image src="/images/brand-07.png" width={100} height={100} alt="brand-07" />
-              <Image src="/images/brand-08.png" width={100} height={100} alt="brand-08" />
+              <Image
+                src="/images/brand-01.png"
+                width={100}
+                height={100}
+                alt="brand-01"
+              />
+              <Image
+                src="/images/brand-02.png"
+                width={100}
+                height={100}
+                alt="brand-02"
+              />
+              <Image
+                src="/images/brand-03.png"
+                width={100}
+                height={100}
+                alt="brand-03"
+              />
+              <Image
+                src="/images/brand-04.png"
+                width={100}
+                height={100}
+                alt="brand-04"
+              />
+              <Image
+                src="/images/brand-05.png"
+                width={100}
+                height={100}
+                alt="brand-05"
+              />
+              <Image
+                src="/images/brand-06.png"
+                width={100}
+                height={100}
+                alt="brand-06"
+              />
+              <Image
+                src="/images/brand-07.png"
+                width={100}
+                height={100}
+                alt="brand-07"
+              />
+              <Image
+                src="/images/brand-08.png"
+                width={100}
+                height={100}
+                alt="brand-08"
+              />
             </div>
           </Marquee>
         </div>

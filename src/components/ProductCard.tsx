@@ -10,7 +10,6 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const ProductCard = ({ productSize }: { productSize: string }) => {
-    console.log(productSize);
     const [hover, setHover] = useState(false);
     const router = useRouter();
 
@@ -38,14 +37,15 @@ const ProductCard = ({ productSize }: { productSize: string }) => {
             >
                 <Image
                     src={Watch}
+                
                     alt=""
                     className={`
                         ${productSize === "50%" && "h-[130px] w-[200px]"}
-                        ${productSize === "287px" && "h-[230px]"}
+                        ${productSize === "287px" && "h-[200px]"}
                         ${productSize === "25%" && "h-[230px]"}
                         ${productSize === "33.5%" && "h-[230px]"}
 
-                        ${productSize === "100%" && "sm:w-[470px]"}
+                        ${productSize === "100%" && " w-[470px]"}
                        ${hover ? "hidden" : "block"}`}
                 />
                 <Image
@@ -55,8 +55,8 @@ const ProductCard = ({ productSize }: { productSize: string }) => {
                         ${productSize === "50%" && "h-[130px]"}
                         ${productSize === "25%" && "h-[230px]"}
                         ${productSize === "33.5%" && "h-[230px]"}
-                        ${productSize === "287px" && "h-[230px]"}
-                    ${productSize === "100%" && "sm:w-[470px]"}
+                        ${productSize === "287px" && "h-[200px]"}
+                    ${productSize === "100%" && "w-[470px]"}
                      ${hover ? "block" : "hidden"}`}
                 />
             </div>
