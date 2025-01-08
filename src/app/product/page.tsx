@@ -51,7 +51,7 @@ const OurStore = () => {
                 <input type="checkbox" name="" id="" />
                 <label
                   htmlFor=""
-                  className="text-[9px] whitespace-nowrap sm:text-xs xl:text-sm text-gray-500"
+                  className="text-[8px] whitespace-nowrap sm:text-xs xl:text-sm text-gray-500"
                 >
                   In Stock (1)
                 </label>
@@ -60,7 +60,7 @@ const OurStore = () => {
                 <input type="checkbox" name="" id="" />
                 <label
                   htmlFor=""
-                  className="text-[9px] whitespace-nowrap sm:text-xs xl:text-sm text-gray-500"
+                  className="text-[8px] whitespace-nowrap sm:text-xs xl:text-sm text-gray-500"
                 >
                   Out of Stock (1)
                 </label>
@@ -111,7 +111,7 @@ const OurStore = () => {
               <h6 className="font-semibold mb-1.5 sm:mb-3 text-xs sm:text-sm">
                 Size
               </h6>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 mb-1">
                 <input type="checkbox" name="" id="" />
                 <label
                   htmlFor=""
@@ -162,7 +162,7 @@ const OurStore = () => {
                   />
                 </div>
                 <div className="self-start">
-                  <p className="capitalize text-[10px] sm:text-sm font-semibold">
+                  <p className="capitalize text-[8px] sm:text-sm font-semibold">
                     kids headphones bulk 10 pack multi collored for students
                   </p>
                   <ReactStars
@@ -186,7 +186,7 @@ const OurStore = () => {
                 </div>
 
                 <div className="self-start">
-                  <p className="capitalize text-[10px] sm:text-sm font-semibold">
+                  <p className="capitalize text-[8px] sm:text-sm font-semibold">
                     kids headphones bulk 10 pack multi collored for students
                   </p>
                   <ReactStars
@@ -204,8 +204,8 @@ const OurStore = () => {
         </div>
         <div className=" py-2 w-[75%]">
           <div className="bg-white w-full py-1 sm:py-2 rounded flex justify-between items-center px-2.5 sm:px-5">
-            <div className="flex items-center gap-1.5 sm:gap-3">
-              <p className="font-bold sm:font-semibold sm:text-base whitespace-nowrap text-[11px]">
+            <div className="flex items-center gap-1 sm:gap-3">
+              <p className="font-bold sm:font-semibold sm:text-base whitespace-nowrap text-[9px]">
                 Sort By:{" "}
               </p>
               <select
@@ -224,13 +224,13 @@ const OurStore = () => {
               </select>
             </div>
             <div className="flex items-center gap-3">
-              <p className="text-[10px] sm:text-sm whitespace-nowrap">
+              <p className="text-[9px] sm:text-sm whitespace-nowrap">
                 21 Products
               </p>
               <div className="flex gap-1.5 items-center">
                 <Image
-                  width={30}
-                  height={20}
+                  width={25}
+                  height={15}
                   src="/images/gr4.svg"
                   alt=""
                   className="w-[30px] h-[20px] cursor-pointer hidden sm:flex"
@@ -241,8 +241,8 @@ const OurStore = () => {
                   alt=""
                   className="w-[30px] h-[20px] cursor-pointer hidden sm:flex"
                   onClick={() => setLength(3)}
-                  width={30}
-                  height={20}
+                  width={25}
+                  height={15}
                 />
                 <Image
                   src="/images/gr2.svg"
