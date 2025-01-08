@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer-top border-b border-gray py-1.5 sm:py-3 bg-footer-color">
-        <div className="w-[90%] max-w-[1500px] mx-auto flex justify-between items-center gap-3 flex-wrap">
+        <div className="w-[95%] sm:w-[90%] max-w-[1500px] mx-auto flex justify-between items-center gap-3 flex-wrap">
           <div className="flex justify-start items-center gap-3">
             <Image
               src={NewsLetter}
@@ -40,10 +40,10 @@ const Footer = () => {
         </div>
       </footer>
       <footer className="footer-mid border-b border-gray py-1.5 sm:py-3 flex justify-between items-center text-white bg-footer-color">
-        <div className="w-[90%] max-w-[1500px] mx-auto flex justify-evenly gap-3 sm:gap-5 items-start">
+        <div className="w-[95%] sm:w-[90%] max-w-[1500px] mx-auto flex justify-evenly gap-3 sm:gap-5 items-start">
           <div className="flex flex-col gap-2 sm:gap-6 justify-center items-start">
-            <h1 className="font-bold text-[11px] sm:text-xl">Contact Us</h1>
-            <ul className="flex flex-col font-semibold text-[10px] sm:text-sm gap-2 sm:gap-3">
+            <h1 className="font-bold text-[10px] sm:text-xl">Contact Us</h1>
+            <ul className="flex flex-col font-semibold text-[8px] sm:text-sm gap-2 sm:gap-3">
               <li className="gap-0 m-0 p-0">
                 <Link href={""}>
                   Pakistan, Punjab, Multan, <br /> Near Bahawalpur Bypass .
@@ -55,7 +55,7 @@ const Footer = () => {
               <li>
                 <Link href={""}>saadqurashi333@gmail.com</Link>
               </li>
-              <li className="flex justify-start items-center gap-3 text-2xl">
+              <li className="flex justify-start items-center gap-3 text-xl">
                 <Link href={""}>
                   <LiaLinkedin />
                 </Link>
@@ -72,8 +72,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-2 sm:gap-6 justify-center items-start">
-            <h1 className="font-bold text-[11px] sm:text-xl">Information</h1>
-            <ul className="flex flex-col font-semibold text-[10px] sm:text-sm gap-2 sm:gap-3">
+            <h1 className="font-bold text-[10px] sm:text-xl">Information</h1>
+            <ul className="flex flex-col font-semibold text-[8px] sm:text-sm gap-2 sm:gap-3">
               <li className="">
                 <Link href={"privacy-policy"}>Privacy Policy</Link>
               </li>
@@ -92,8 +92,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-2 sm:gap-6 justify-center items-start">
-            <h1 className="font-bold text-[11px] sm:text-xl">Account</h1>
-            <ul className="flex flex-col font-semibold text-[10px] sm:text-sm gap-2 sm:gap-3">
+            <h1 className="font-bold text-[10px] sm:text-xl">Account</h1>
+            <ul className="flex flex-col font-semibold text-[8px] sm:text-sm gap-2 sm:gap-3">
               <li className="">
                 <Link href={""}>About Us</Link>
               </li>
@@ -106,10 +106,10 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-2 sm:gap-6 justify-center items-start">
-            <h1 className="font-bold text-[11px] sm:text-xl whitespace-nowrap">
+            <h1 className="font-bold text-[10px] sm:text-xl whitespace-nowrap">
               Quick Links
             </h1>
-            <ul className="flex flex-col font-semibold text-[10px] sm:text-sm gap-2 sm:gap-3">
+            <ul className="flex flex-col font-semibold text-[8px] sm:text-sm gap-2 sm:gap-3">
               <li className="">
                 <Link href={""}>Laptops</Link>
               </li>
@@ -127,7 +127,7 @@ const Footer = () => {
         </div>
       </footer>
       <footer className="footer-bottom border-b border-gray py-1.5 sm:py-3 flex justify-center items-center text-white bg-footer-color">
-        <div className="w-[90%] max-w-[1500px] mx-auto flex justify-center items-center">
+        <div className="w-[95%] sm:w-[90%] max-w-[1500px] mx-auto flex justify-center items-center">
           <h1 className="font-semibold sm:text-sm text-xs">
             &copy; {new Date().getFullYear()}; Powered By Developer&apos;s Saad
           </h1>

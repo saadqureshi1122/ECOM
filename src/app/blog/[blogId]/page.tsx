@@ -21,7 +21,7 @@ const SingleBlog = () => {
                 {/* Single Blog Box */}
 
                 <div className="single-blog-box px-16 mt-5 flex flex-col justify-center items-start gap-5">
-                    <h2 className="text-3xl font-semibold capitalize">
+                    <h2 className="text-xl sm:text-3xl font-semibold capitalize">
                         A Beautiful sunday morning renaissance
                     </h2>
                     <Image src={Blog} alt="Blog-1-Img" className="w-[80%] " />

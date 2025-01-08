@@ -92,20 +92,20 @@ const Header = () => {
         </div>
       </header>
       <header className="header-bottom py-1.5 sm:py-2 w-full text-sm text-white bg-footer-color">
-        <div className="w-[90%] max-w-[1500px] flex gap-5 sm:gap-8 mx-auto">
+        <div className="w-[95%] sm:w-[90%] max-w-[1500px] flex gap-5 sm:gap-8 mx-auto">
           <div className="h-full relative">
             <button
-              className="flex justify-between items-center gap-1 sm:gap-2   w-[145px] sm:w-[180px] py-[6px]"
+              className="flex justify-between items-center gap-0.5 sm:gap-2   w-[125px] sm:w-[180px] py-[6px]"
               onClick={() => setCategoryDropdown((prev) => !prev)}
             >
-              <div className="flex items-center gap-1 sm:gap-2">
+              <div className="flex items-center gap-0.5 sm:gap-2">
                 <Image
                   src={Menu}
                   alt="Shop Categories"
                   className="h-[15px] sm:h-[23px]"
                 />
 
-                <p className="uppercase text-xs 2xl:text-sm">Shop Categories</p>
+                <p className="uppercase text-[8px] sm:text-xs 2xl:text-sm">Shop Categories</p>
               </div>
               <div>
                 {categoryDropdown ? (
@@ -156,7 +156,7 @@ const Header = () => {
               </Link>
             </ul>
           </div>
-          <div className="flex justify-center items-center uppercase gap-1.5 sm:gap-3 text-[10px] sm:text-sm font-semibold">
+          <div className="flex justify-center items-center uppercase gap-1 sm:gap-3 text-[9px] sm:text-sm font-semibold">
             <Link href={"/"}>Home</Link>
             <Link href={"/product"} className={"whitespace-nowrap"}>
               Our Store
